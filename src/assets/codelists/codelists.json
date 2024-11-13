@@ -1,0 +1,782 @@
+{
+    "AWBUseIndicator": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#AWBUseIndicator_R",
+        "description": "Revenue AWB"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#AWBUseIndicator_S",
+        "description": "Slave AWB"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#AWBUseIndicator_V",
+        "description": "Void AWB"
+      }
+    ],
+    "ChargeIdentifier": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ChargeIdentifier_CN",
+        "description": "CASS neutral Air Waybill number"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ChargeIdentifier_CO",
+        "description": "CASS Other Carrier Air Waybill number"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ChargeIdentifier_CT",
+        "description": "CASS Interline Air Waybill number"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ChargeIdentifier_IN",
+        "description": "Industry Air Waybill number"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ChargeIdentifier_NI",
+        "description": "Neutral Air Waybill number"
+      }
+    ],
+    "ExplosiveCompatibilityGroupCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ExplosiveCompatibilityGroupCode_A",
+        "description": "Compatibility group A"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ExplosiveCompatibilityGroupCode_B",
+        "description": "Compatibility group B"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ExplosiveCompatibilityGroupCode_C",
+        "description": "Compatibility group C"
+      }
+    ],
+    "GoodsTypeCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#GoodsTypeCode_I",
+        "description": "The package or all packed in one, category I - White"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#GoodsTypeCode_II",
+        "description": "The package or all packed in one, category II - Yellow"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#GoodsTypeCode_III",
+        "description": "The package or all packed in one, category III - Yellow"
+      }
+    ],
+    "MeasurementUnitCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_BQL",
+        "description": "Becquerel"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_CEL",
+        "description": "Degree Celsius"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_CMT",
+        "description": "Centimetre"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_FAH",
+        "description": "Degree Fahrenheit"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_FTQ",
+        "description": "Cubic Foot"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_GLL",
+        "description": "Liquid Gallon"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_GRM",
+        "description": "Gram"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_INH",
+        "description": "Inch"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_KGM",
+        "description": "Kilogram"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_LTR",
+        "description": "Litre"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_MTQ",
+        "description": "Cubic Metre"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_MTR",
+        "description": "Metre"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode_ONZ",
+        "description": "Ounce UK, US"
+      }
+    ],
+    "DimensionsUnitCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#DimensionsUnitCode",
+        "description": "Used for length units."
+      }
+    ],
+    "VolumeUnitCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#VolumeUnitCode",
+        "description": "Used for volume units."
+      }
+    ],
+    "WeightUnitCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#WeightUnitCode",
+        "description": "Used for weight units."
+      }
+    ],
+    "TemperatureUnitCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#TemperatureUnitCode",
+        "description": "Used for temperature units."
+      }
+    ],
+    "OtherChargeCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#OtherChargeCode_AC",
+        "description": "All Charges Prepaid"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#OtherChargeCode_AS",
+        "description": "All Charges Collect"
+      }
+    ],
+    "PrepaidCollectIndicator": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#PrepaidCollectIndicator_C",
+        "description": "Collect"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#PrepaidCollectIndicator_P",
+        "description": "Prepaid"
+      }
+    ],
+    "SecurityStatus": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#SecurityStatus_NSC",
+        "description": "Not Screened or Checked"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#SecurityStatus_SCO",
+        "description": "Screened or Checked"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#SecurityStatus_SHR",
+        "description": "Security High Risk"
+      }
+    ],
+    "ULDChargeCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ULDChargeCode_A",
+        "description": "ULD positioning charges"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ULDChargeCode_B",
+        "description": "ULD lease charges"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ULDChargeCode_C",
+        "description": "ULD repair charges"
+      }
+    ],
+    "ULDLoadingIndicator": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ULDLoadingIndicator_L",
+        "description": "Lower Compartment"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ULDLoadingIndicator_M",
+        "description": "Main Deck"
+      }
+    ],
+    "BasicRateClassCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#BasicRateClassCode",
+        "description": "Basic Rate Class Code as defined in Cargo IMP"
+      }
+    ],
+    "RatingsType": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#RatingsType",
+        "description": "Ratings Type"
+      }
+    ],
+    "CurrencyCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#CurrencyCode_EUR",
+        "description": "EUR"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#CurrencyCode_CHF",
+        "description": "CHF"
+      },
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#CurrencyCode_USD",
+        "description": "USD"
+      }
+    ],
+    "DemurrageCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#DemurrageCode",
+        "description": "Demurrage Code"
+      }
+    ],
+    "GoodsTypeExtensionCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#GoodsTypeExtensionCode",
+        "description": "Goods Type Extension Code"
+      }
+    ],
+    "ModeCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ModeCode",
+        "description": "Mode Code"
+      }
+    ],
+    "OtherIdentifierType": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#OtherIdentifierType",
+        "description": "Other Identifier Type"
+      }
+    ],
+    "RadioactiveMaterialClassification": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#RadioactiveMaterialClassification",
+        "description": "Radioactive Material Classification"
+      }
+    ],
+    "ScreeningExemption": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#ScreeningExemption",
+        "description": "Screening Exemption"
+      }
+    ],
+    "SignatureTypeCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#SignatureTypeCode",
+        "description": "Signature Type Code"
+      }
+    ],
+    "TransactionPurposeCode": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#TransactionPurposeCode",
+        "description": "Transaction Purpose Code"
+      }
+    ],
+    "TransportMeansServiceType": [
+      {
+        "id": "https://onerecord.iata.org/ns/coreCodeLists#TransportMeansServiceType",
+        "description": "Transport Means Service Type"
+      }
+    ],
+  "AircraftPossibilityCode": [
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#AircraftPossibilityCode_BBF",
+      "description": "Pure freighter flight carrying Loose Load Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#AircraftPossibilityCode_BBQ",
+      "description": "Pure freighter flight carrying Palletized Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#AircraftPossibilityCode_BBV",
+      "description": "Truck carrying Loose Load Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#AircraftPossibilityCode_PBF",
+      "description": "Passenger flight carrying Loose Load Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#AircraftPossibilityCode_PBQ",
+      "description": "Passenger flight carrying Palletized Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#AircraftPossibilityCode_PBV",
+      "description": "Truck carrying mixed Palletized and Loose Load Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#AircraftPossibilityCode_PPF",
+      "description": "Passenger flight carrying mixed Palletized and Loose Load Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#AircraftPossibilityCode_PPQ",
+      "description": "Pure Freighter carrying mixed Palletized and Loose Load Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#AircraftPossibilityCode_PPV",
+      "description": "Truck carrying Palletized Cargo"
+    }
+  ],
+  "ChargeCode": [
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ChargeCode_CA",
+      "description": "Charges Collect"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ChargeCode_CP",
+      "description": "Charges Prepaid"
+    }
+  ],
+  "CommodityCode": [
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM",
+      "description": "Chemicals"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_CDGR",
+      "description": "Chemical - Corrosive dangerous goods"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_CLNG",
+      "description": "Chemical - Cleaning"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_COSM",
+      "description": "Chemical - Cosmetics"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_DYES",
+      "description": "Chemical - Dyes"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_EXLS",
+      "description": "Chemical - Explosives"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_FERT",
+      "description": "Chemical - Fertilizers"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_FLMB",
+      "description": "Chemical - Flammable"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_FRGR",
+      "description": "Chemical - Fragrances"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_Gases",
+      "description": "Chemical - Gases"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_INOG",
+      "description": "Chemical - Inorganic"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_ORGA",
+      "description": "Chemical - Organic"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_PAIN",
+      "description": "Chemical - Paints"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_PHAR",
+      "description": "Chemical - Pharmaceutical Products"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_PLST",
+      "description": "Chemical - Plastics"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_POIS",
+      "description": "Chemical - Poison"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_RADI",
+      "description": "Chemical - Radioactive"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_CHEM_SALT",
+      "description": "Chemical - Salt"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_DGR",
+      "description": "Dangerous goods"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_EAT",
+      "description": "Eatables"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_ELEC",
+      "description": "Electrical"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_FISH",
+      "description": "Fish"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_FRUT",
+      "description": "Fruits"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_HUM",
+      "description": "Human Remains"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_ICE",
+      "description": "Ice"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE",
+      "description": "Live Animals"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE_BIRD",
+      "description": "Birds"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE_CAT",
+      "description": "Cats"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE_DOG",
+      "description": "Dogs"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE_FISH",
+      "description": "Fish"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE_HORS",
+      "description": "Horses"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE_INSE",
+      "description": "Insects"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE_MAMM",
+      "description": "Mammals"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE_REPT",
+      "description": "Reptiles"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_LIVE_ZOOA",
+      "description": "Zoo animals"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_MAIL",
+      "description": "Mail"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_MEAT",
+      "description": "Meat"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_METAL",
+      "description": "Metals"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_PER",
+      "description": "Perishables"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_PRIN",
+      "description": "Printed Matter"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_PRIN_BOOK",
+      "description": "Books"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_PRIN_BROC",
+      "description": "Brochures"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_PRIN_DOCU",
+      "description": "Documents and Tickets"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_PRIN_EDUM",
+      "description": "Educational materials"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_PRIN_MAGA",
+      "description": "Magazines"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_PRIN_NEWS",
+      "description": "Newspapers"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_PRIN_PHOT",
+      "description": "Photograph"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_TEMP",
+      "description": "Temperature Controlled"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_TEXT",
+      "description": "Textiles"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_TOBA",
+      "description": "Tobacco"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VALU",
+      "description": "Valuables"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VEGE",
+      "description": "Vegetables"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL",
+      "description": "Vehicles"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_AIRC",
+      "description": "Aircraft"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_AIRC_AACC",
+      "description": "Aircraft accessories"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_AIRC_AENG",
+      "description": "Aircraft engine"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_AIRC_APAR",
+      "description": "Aircraft parts"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_AIRC_ASUP",
+      "description": "Aircraft supplies"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_AIRC_AWHL",
+      "description": "Aircraft wheels"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_AIRC_HELI",
+      "description": "Helicopters"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_BOAT",
+      "description": "Boats"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_RAIL",
+      "description": "Railway"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_ROAD",
+      "description": "Road"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_SVCL",
+      "description": "Service Vehicles"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_SVCL_AUTO",
+      "description": "Automobiles"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_SVCL_BICY",
+      "description": "Bicycles"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_SVCL_BUS",
+      "description": "Bus"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_SVCL_TRAC",
+      "description": "Tractors"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#CommodityCode_VHCL_SVCL_TRUK",
+      "description": "Trucks"
+    }
+  ],
+  "PackagingDangerLevelCode": [
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#PackagingDangerLevelCode_I",
+      "description": "Packaging group I"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#PackagingDangerLevelCode_II",
+      "description": "Packaging group II"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#PackagingDangerLevelCode_III",
+      "description": "Packaging group III"
+    }
+  ],
+  "RaTypeCode": [
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#RaTypeCode_II_YELLOW",
+      "description": "II-Yellow"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#RaTypeCode_I_WHITE",
+      "description": "I-Yellow"
+    }
+  ],
+  "ServiceCode": [
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ServiceCode_C",
+      "description": "Charter"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ServiceCode_F",
+      "description": "Full Load"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ServiceCode_N",
+      "description": "Normal"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ServiceCode_Q",
+      "description": "Unit Load Device (ULD)"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ServiceCode_R",
+      "description": "Refrigerated"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ServiceCode_T",
+      "description": "Charter"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ServiceCode_X",
+      "description": "Express Shipments"
+    }
+  ],
+  "LoadType": [
+    {
+      "id": "https://onerecord.iata.org/ns/cargo#BULK",
+      "description": "Bulk"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/cargo#LOOSE",
+      "description": "Loose"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/cargo#PALLET",
+      "description": "Pallet"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/cargo#UNIT_LOAD_DEVICE",
+      "description": "ULD"
+    }
+  ],
+  "ShipmentSecurityStatus": [
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ShipmentSecurityStatus_NCR",
+      "description": "Not Cargo Secured"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#ShipmentSecurityStatus_SCR",
+      "description": "Cargo Secured"
+    }
+  ],
+  "PackageMarkCode": [
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#PackageMarkCode_UPC",
+      "description": "Universal Product Code"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#PackageMarkCode_SSCC_18",
+      "description": "Serial Shipping Container Code-18 / EAN-18"
+    }
+  ],
+  "SpecialHandlingCode": [
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_AVI",
+      "description": "Live Animals"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_BUL",
+      "description": "Bulky"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_CAR",
+      "description": "Needs to be carried on a Cargo Aircraft Only"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_CUT",
+      "description": "Flowers"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_DAP",
+      "description": "Diplomatic Pouch"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_EAT",
+      "description": "Foodstuffs"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_HEA",
+      "description": "Heavy"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_HUM",
+      "description": "Human Remains"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_ICE",
+      "description": "Ice"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_MAG",
+      "description": "Magnetic"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_NWP",
+      "description": "Not Weather Protected"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_OBX",
+      "description": "Obnoxious Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_OHG",
+      "description": "Over High"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_OWD",
+      "description": "Over Wide"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_PER",
+      "description": "Perishable"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_PRI",
+      "description": "High Value/Cost"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_RAL",
+      "description": "Radioactive Material"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_REF",
+      "description": "Needs Refrigeration"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_VUN",
+      "description": "Vulnerable Cargo"
+    },
+    {
+      "id": "https://onerecord.iata.org/ns/coreCodeLists#SpecialHandlingCode_WET",
+      "description": "Wet Cargo"
+    }
+  ]
+}

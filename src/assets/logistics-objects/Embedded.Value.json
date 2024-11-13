@@ -1,0 +1,31 @@
+{
+  "schema": "Embedded",
+  "name": "Value",
+  "description": "Unit of measurement details",
+  "columns": [
+    {
+      "name": "unit",
+      "description": "Unit of measurement as per MeasurementUnitCode codelist. If the code is not present; create an instance of MeasurementUnitCode based on UNECE Rec. 20 Rev. 17e-2021",
+      "type": "ccodes:MeasurementUnitCode",
+      "schemaType": "CodeListElement",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Value",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#unit",
+      "valueIRI": "https://onerecord.iata.org/ns/coreCodeLists#MeasurementUnitCode"
+    },
+    {
+      "name": "numericalValue",
+      "description": "Numerical value",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Value",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#numericalValue",
+      "valueIRI": "http://www.w3.org/2001/XMLSchema#double"
+    }
+  ]
+}
