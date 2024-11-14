@@ -48,7 +48,22 @@ function App() {
           const validEventTypes = [
             'LOGISTICS_OBJECT_CREATED',
             'LOGISTICS_OBJECT_UPDATED',
-            'LOGISTICS_EVENT_RECEIVED'
+            'LOGISTICS_EVENT_RECEIVED',
+            'CHANGE_REQUEST_PENDING',
+            'CHANGE_REQUEST_ACCEPTED',
+            'CHANGE_REQUEST_REJECTED',
+            'CHANGE_REQUEST_FAILED',
+            'CHANGE_REQUEST_REVOKED',
+            'ACCESS_DELEGATION_REQUEST_PENDING',
+            'ACCESS_DELEGATION_REQUEST_ACCEPTED',
+            'ACCESS_DELEGATION_REQUEST_REJECTED',
+            'ACCESS_DELEGATION_REQUEST_FAILED',
+            'ACCESS_DELEGATION_REQUEST_REVOKED',
+            'SUBSCRIPTION_REQUEST_PENDING',
+            'SUBSCRIPTION_REQUEST_ACCEPTED',
+            'SUBSCRIPTION_REQUEST_REJECTED',
+            'SUBSCRIPTION_REQUEST_FAILED',
+            'SUBSCRIPTION_REQUEST_REVOKED'
           ];
           
           if (!validEventTypes.includes(eventType)) {
