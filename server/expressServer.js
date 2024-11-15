@@ -92,7 +92,7 @@ app.get('/subscriptions', (req, res) => {
     "@type": "api:Subscription",
     "api:hasContentType": "application/ld+json",
     "api:hasSubscriber": {
-      "@id": "http://host.docker.internal:"+PORT
+      "@id": "http://localhost:"+PORT
     },
     "api:hasTopicType": {
       "@id": topicType
