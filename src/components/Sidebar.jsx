@@ -111,7 +111,7 @@ const Sidebar = ({ open, toggleDrawer }) => {
   };
 
   const menuItems = [
-    { text: 'Dashboard', icon: <DashboardIcon />, path: '/dashboard' },
+    //{ text: 'Dashboard', icon: <DashboardIcon />, path: '/dashboard' },
     { text: 'Database', icon: <DatabaseIcon />, path: '/' },
     { text: 'Create Object', icon: <AddIcon />, path: '/logistics-objects/create' },
     { text: 'Notifications', icon: <NotificationsIcon />, path: '/notifications' },
