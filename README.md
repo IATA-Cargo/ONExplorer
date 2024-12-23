@@ -1,4 +1,4 @@
-# ONEXplorer - A demo interface for ONE Record.
+# ONExplorer - A demo interface for ONE Record.
 
 Run :
 - npm -i
