@@ -34,6 +34,7 @@ import {
 } from '@mui/icons-material';
 import { getLogisticsObjects, apiCall, externalApiCall } from '../utils/api';
 import { useNavigate } from 'react-router-dom';
+import { validateSettings } from '../utils/settingsValidator';
 
 const STATUS_COLORS = {
     REQUEST_PENDING: { bg: '#fff3e0', color: '#e65100', label: 'PENDING' },
@@ -144,6 +145,7 @@ const Subscriptions = () => {
   const [externalSubscriptions, setExternalSubscriptions] = useState([]);
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
   const [subscriptionToDelete, setSubscriptionToDelete] = useState(null);
+  const [settingsValid, setSettingsValid] = useState(false);
   
   // Add this helper function inside the component
   const isValidUrl = (string) => {
@@ -156,8 +158,15 @@ const Subscriptions = () => {
   };
 
   useEffect(() => {
-    fetchSubscriptions();
+    const { isValid } = validateSettings();
+    setSettingsValid(isValid);
   }, []);
+
+  useEffect(() => {
+    if (settingsValid) {
+      fetchSubscriptions();
+    }
+  }, [settingsValid]);
 
   useEffect(() => {
     const loadServers = () => {
@@ -499,7 +508,13 @@ const Subscriptions = () => {
         Internal Subscriptions
       </Typography>
 
-      {loading ? (
+      {!settingsValid ? (
+        <Paper sx={{ p: 3, textAlign: 'center' }}>
+          <Typography color="textSecondary">
+            Please configure API settings to view internal subscriptions
+          </Typography>
+        </Paper>
+      ) : loading ? (
         <Box sx={{ display: 'flex', justifyContent: 'center', p: 3 }}>
           <CircularProgress />
         </Box>
