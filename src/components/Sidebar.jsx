@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Box,
   Drawer,
@@ -32,6 +32,7 @@ import {
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Logo from './Logo'; // Import the Logo component
+import { validateSettings } from '../utils/settingsValidator';
 
 const THEMES = {
   SHIPPER: { 
@@ -101,8 +102,14 @@ const Sidebar = ({ open, toggleDrawer }) => {
   const [selectedTheme, setSelectedTheme] = useState(() => 
     localStorage.getItem('userRole') || 'SHIPPER'
   );
+  const [settingsValid, setSettingsValid] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
+  useEffect(() => {
+    const { isValid } = validateSettings();
+    setSettingsValid(isValid);
+  }, []);
 
   const handleThemeChange = (event) => {
     const newTheme = event.target.value;
@@ -113,10 +120,12 @@ const Sidebar = ({ open, toggleDrawer }) => {
   const menuItems = [
     //{ text: 'Dashboard', icon: <DashboardIcon />, path: '/dashboard' },
     { text: 'Database', icon: <DatabaseIcon />, path: '/' },
-    { text: 'Create Object', icon: <AddIcon />, path: '/logistics-objects/create' },
+    ...(settingsValid ? [
+      { text: 'Create Object', icon: <AddIcon />, path: '/logistics-objects/create' },
+      { text: 'Changes', icon: <EditIcon />, path: '/changes' }
+    ] : []),
     { text: 'Notifications', icon: <NotificationsIcon />, path: '/notifications' },
     { text: 'Subscriptions', icon: <SendIcon />, path: '/subscriptions' },
-    { text: 'Changes', icon: <EditIcon />, path: '/changes' },
     { text: 'Settings', icon: <SettingsIcon />, path: '/settings' }
   ];
 

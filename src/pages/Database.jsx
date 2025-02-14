@@ -45,7 +45,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { getLogisticsObjects } from '../utils/api';
 import LogisticsObjectEdit from '../components/LogisticsObjectEdit';
-import SettingsCheck from '../components/SettingsCheck';
+import { validateSettings } from '../utils/settingsValidator';
 import SubscriptionDialog from '../components/SubscriptionDialog';
 
 // Add this constant at the top of the file, after imports
@@ -101,6 +101,18 @@ const Database = () => {
   const [externalObjects, setExternalObjects] = useState([]);
   const [subscriptionDialogOpen, setSubscriptionDialogOpen] = useState(false);
   const [selectedObjectForSubscription, setSelectedObjectForSubscription] = useState(null);
+  const [settingsValid, setSettingsValid] = useState(false);
+
+  useEffect(() => {
+    const { isValid } = validateSettings();
+    setSettingsValid(isValid);
+  }, []);
+
+  useEffect(() => {
+    if (settingsValid) {
+      fetchData();
+    }
+  }, [settingsValid]);
 
   useEffect(() => {
     // Load external objects from localStorage on component mount
@@ -108,10 +120,6 @@ const Database = () => {
     if (savedExternalObjects) {
       setExternalObjects(JSON.parse(savedExternalObjects));
     }
-  }, []);
-
-  useEffect(() => {
-    fetchData();
   }, []);
 
   // Extract unique types and set filtered data
@@ -139,14 +147,6 @@ const Database = () => {
       console.error('Error fetching data:', err);
       setError(err.message);
       
-      // Redirect to settings if no token or base URL
-      if (err.status === 401) {
-        navigate('/settings', { 
-          state: { 
-            message: 'Please configure your API settings to continue.' 
-          }
-        });
-      }
     } finally {
       setLoading(false);
     }
@@ -346,11 +346,8 @@ const Database = () => {
     </>
   );
 
-  // Add SettingsCheck at the top of your component
   return (
     <Box>
-      <SettingsCheck />
-      
       {/* Internal Objects Section */}
       <Paper sx={{ p: 3, mb: 4 }}>
         {/* Header and Controls */}
@@ -430,8 +427,14 @@ const Database = () => {
           </Alert>
         )}
 
-        {/* Loading State */}
-        {loading ? (
+        {/* Loading or Settings Invalid State */}
+        {!settingsValid ? (
+          <Box sx={{ p: 3, textAlign: 'center' }}>
+            <Typography color="textSecondary">
+              Please configure API settings to view internal logistics objects
+            </Typography>
+          </Box>
+        ) : loading ? (
           <Box sx={{ display: 'flex', justifyContent: 'center', p: 3 }}>
             <CircularProgress />
           </Box>

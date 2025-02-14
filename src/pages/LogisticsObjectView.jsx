@@ -68,7 +68,11 @@ const EVENT_TYPES = [
   { code: 'FOH', name: 'Freight On-Hand', description: 'Freight is on hand' },
   { code: 'RCT', name: 'Ready for Collection Time', description: 'Ready for collection' },
   { code: 'RCF', name: 'Received from Flight', description: 'Received from flight' },
-  { code: 'CUM', name: 'Custom filing', description: 'Custom filing'}
+  { code: 'CSF', name: 'Customs filing', description: 'Data ready for Customs filing'},
+  { code: 'RFI', name: 'Request for information', description: 'Request for information'},
+  { code: 'RFS', name: 'Request for screening', description: 'Request for screening'},
+  { code: 'ASC', name: 'Assessment Completion', description: 'Assessment Completion'},
+  { code: 'DNL', name: 'Do Not Load', description: 'Do Not Load'}
 ];
 
 // Add EVENT_TIME_TYPES constant

@@ -167,7 +167,6 @@ const Settings = () => {
           <Button 
             variant="contained" 
             onClick={handleInternalSave}
-            disabled={!internalSettings.baseUrl || !internalSettings.token}
           >
             Save Internal Settings
           </Button>
