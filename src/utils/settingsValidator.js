@@ -1,6 +1,6 @@
 export const validateSettings = () => {
-  const token = localStorage.getItem('jwtToken');
-  const baseUrl = localStorage.getItem('apiBaseUrl');
+  const token = localStorage.getItem('token');
+  const baseUrl = localStorage.getItem('baseUrl');
   
   const errors = [];
   
