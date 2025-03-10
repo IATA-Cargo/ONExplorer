@@ -25,7 +25,9 @@ function App() {
 
   useEffect(() => {
     const serverPort = getServerPort();
-    const eventSource = new EventSource(`http://localhost:${serverPort}/notifyServer`);
+    const host = window.location.hostname || 'localhost';
+    const protocol = window.location.protocol === 'https:' ? 'https:' : 'http:';
+    const eventSource = new EventSource(`${protocol}//${host}:${serverPort}/notifyServer`);
     
     eventSource.onmessage = (event) => {
       try {
